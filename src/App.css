@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+  font-size: calc(10px + 2vmin);
+}
+
 .App {
-  text-align: center;
+  /* text-align: right; */
 }
 
 .App-logo {
@@ -14,14 +20,9 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* background-color: #282c34;
+  min-height: 100vh;  
+  color: white; */
 }
 
 .App-link {
@@ -32,7 +33,87 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
+.cardsConteiner {
+  margin: 0 auto;
+  width: 75%;
+  height: 90%;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  --cardSide: calc(90vw/4.5);
+  width: var(--cardSide);
+  height: var(--cardSide);
+  /* background: url('https://raw.githubusercontent.com/netology-code/ra16-homeworks/master/events-state/layouts/img/1.jpg') no-repeat; */
+  background-size: var(--cardSide) var(--cardSide);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: calc(var(--cardSide)/10);
+  font-weight: 200;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin-top: calc(var(--cardSide)/12);
+}
+
+.name {
+  position: relative;
+  top: calc(var(--cardSide)/10);
+  /* text-align: center; */
+}
+
+.color {
+  position: relative;
+  /* text-align: center;  */
+  margin-top: calc(var(--cardSide)/5);
+  font-size: small;
+}
+
+.pricebutton {
+  margin-top: calc(var(--cardSide)/2.3);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.price {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.button {
+  border-radius: 20px;
+  height: 1.3rem;
+  background-color: whitesmoke;
+  border-color: red;
+  font-size: 0.4rem;
+  font-weight: 800;
+  color: red;
+}
+
+.list {
+  width: 90vw;
+  height: 100vh;
+}
+
+.rowConteiner {
+  display: flex;
+  justify-content: space-between;
+  /* flex-basis: 0; */
+  flex: 1 1 50%;
+  align-items: center;
+  background-color: ghostwhite;
+  text-align: left;
+}
+
+
+
